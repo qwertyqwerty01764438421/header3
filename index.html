@@ -1,0 +1,51 @@
+<!-- code editor:brakets -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="header3.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="./eduford_img/logo.png" alt=""></a>
+            <div class="nav_links" id="nav_links">
+                <!-- HIDEMENU -->
+                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul> 
+            </div>
+           <!-- OPENMENU -->
+            <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <section class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making Website is one of the easiest thing in the world.You just need to learn Html,CSS <br> Javascript and you are good to go.</p>
+            <a href="" class="btn1"><span class="red">Visit us</span> to know more</a>
+        </section>
+    </header>
+
+
+
+    <!-- js for togggle menu -->
+    <script>
+        const nav_links=document.getElementById("nav_links");
+        function openmenu(){
+            nav_links.style.right="0";
+        }
+        function hidemenu(){
+            nav_links.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
